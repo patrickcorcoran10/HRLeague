@@ -1,0 +1,72 @@
+Arguments: 
+  /usr/local/Cellar/node/10.0.0/bin/node /usr/local/bin/yarn start
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/patrickcorcoran/Library/Python/3.6/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/mysql/bin
+
+Yarn version: 
+  1.10.1
+
+Node version: 
+  10.0.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/patrickcorcoran/Desktop/codingProjects/HRLeague/package.json: Unexpected token } in JSON at position 571
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1136:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:98:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:109:13
+      at run (/usr/local/lib/node_modules/yarn/lib/cli.js:95053:22)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:95070:30
+      at flush (/usr/local/lib/node_modules/yarn/lib/cli.js:94576:9)
+      at process._tickCallback (internal/process/next_tick.js:172:11)
+
+npm manifest: 
+  {
+      "name": "hrLeague",
+      "version": "1.0.0",
+      "private": true,
+      "description": "Home Run Fantasy League App",
+      "main": "server.js",
+      "dependencies": {
+          "axios": "^0.18.0",
+          "body-parser": "^1.18.3",
+          "express": "^4.16.4",
+          "mongoose": "^5.3.4",
+          "path": "^0.12.7"
+      },
+      "scripts": {
+          "start": "node server.js",
+          "start:prod": "node server.js",
+          "client": "cd client && npm run start",
+          "install": "cd client && yarn install",
+          "build": "cd client && npm run build",
+          
+      },
+      "proxy": "http://localhost:3000",
+      "exlintConfig": {
+          "extends": "react-app"
+      },
+      "browserslist": [
+          ">0.2", 
+          "not dead",
+          "not ie <= 11",
+          "not op_mini all"
+      ],
+      "author": "Pat Corcoran",
+      "license": "ISC",
+      "devDependencies": {
+          "concurrently": "^3.5.0",
+          "nodemon": "^1.11.0"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
